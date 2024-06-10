@@ -2,12 +2,12 @@
 //  unless a certain operation has been performed on it.
 //  You can see the expected API in the tests below.
 struct DropBomb {
-    live: bool
+    live: bool,
 }
 
 impl DropBomb {
     fn new() -> DropBomb {
-        DropBomb {live: true}
+        DropBomb { live: true }
     }
 
     fn defuse(&mut self) {
